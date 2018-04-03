@@ -1,10 +1,10 @@
 // Method: 1
-// function reverse_string(str) {
-//   return str
-//     .split('')
-//     .reverse()
-//     .join('')
-// }
+function reverse_string(str) {
+  return str
+    .split('')
+    .reverse()
+    .join('')
+}
 
 // Method: 2
 function reverse_string(str) {
@@ -17,6 +17,8 @@ function reverse_string(str) {
 
 
 // Method: 3
-// function reverse_string(str) {
-//   return str.split('').reduce((rev, char) => char + rev, '')
-// }
+function reverse_string(str) {
+  return str.split('').reduce((rev, char) => char + rev, '')
+}
+
+module.exports = reverse_string
