@@ -7,16 +7,16 @@
 // }
 
 // Method: 2
-// function reverse_string(str) {
-//   let reversed = ''
-//   for (let char of str) {
-//     reversed = char + reversed
-//   }
-//   return reversed
-// }
+function reverse_string(str) {
+  let reversed = ''
+  for (let char of str) {
+    reversed = char + reversed
+  }
+  return reversed
+}
 
 
 // Method: 3
 // function reverse_string(str) {
-//
+//   return str.split('').reduce((rev, char) => char + rev, '')
 // }
