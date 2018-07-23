@@ -1,11 +1,16 @@
-function is_num_palindrome(num) {
-  let tmp = num
-  let rev = 0
-  while (tmp !== 0) {
-    rev = rev * 10
-    rev = rev + tmp % 10
-    tmp = parseInt(tmp / 10)
-  }
-  return (num === rev) ? true : false
+// --- Directions
+// Given an integer, return an integer that is the reverse
+// ordering of numbers.
+// --- Examples
+//   reverseInt(15) === 51
+//   reverseInt(981) === 189
+//   reverseInt(500) === 5
+//   reverseInt(-15) === -51
+//   reverseInt(-90) === -9
+
+function reverseInt(n) {
+  const reversed = n.toString().split('').reverse().join('');
+  return parseInt(reversed) * Math.sign(n)
 }
-module.exports = is_num_palindrome
+
+module.exports = reverseInt;
